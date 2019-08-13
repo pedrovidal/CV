@@ -1,0 +1,163 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Pedro Vidal Sales}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\normalsize}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+% \renewenvironment{itemize}{
+%   \begin{list}{}{
+%     \setlength{\leftmargin}{1.5em}
+%   }
+% }{
+%   \end{list}
+% }
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+% \begin{minipage}{0.45\linewidth}
+%   \href{http://www.unc.edu/}{Universidade Federal da Bahia} \\
+%   Department of Computer Science \\
+% \end{minipage}
+% \begin{minipage}{0.45\linewidth}
+%   \begin{tabular}{ll}
+%     Phone: & +55 (71) 99903-2767 \\
+%     Email: & \href{mailto:pedrovidal191@gmail.com}{\tt pedrovidal191@gmail.com}
+%     % Language: Portuguese (native), English (advanced), Spanish (beginner);
+    
+%   \end{tabular}
+% \end{minipage}
+
+\section*{Personal Information}
+    \begin{itemize}
+        \item Phone: +55 (71) 99903-2767
+        \item Email: \href{mailto:pedrovidal191@gmail.com}{\tt pedrovidal191@gmail.com}
+        \item Languages: Portuguese (native), English (advanced), Spanish (beginner)
+        \item GitHub: https://github.com/pedrovidal
+    \end{itemize}
+
+\section*{Education}
+
+  Universidade Federal da Bahia, 2015-2019
+  Bachelor of Computer Science
+
+  \begin{itemize}
+    \item GPA: 8.2/10.
+  \end{itemize}
+
+\section*{Experience}
+  Universidade Federal da Bahia, 2016-2019
+  
+  Undergraduate Research
+  \begin{itemize}
+    \item Image processing focused on newborns fingerprints;
+    \item Monograph: Newborns fingerprint images quality analysis using deep learning.
+  \end{itemize}
+
+% \section*{College Projects}
+%   Artificial Inteligence
+%   Minesweeper Logical Agent
+%   \begin{itemize}
+%     \item Development of a logical agent that could play (and win) a match of minesweeper;
+%     \item Source code: github.com/gdahia/ufba-ai-minesweeper
+%   \end{itemize}
+
+\section*{Miscellaneous}
+
+Competitive Programming
+
+\begin{itemize}
+  %\item 2015 Brazilian First Phase -
+  %\item 2016 ACM-ICPC Brazilian First Phase - Forty-ninth Place
+  %\item 2017 ACM-ICPC Brazilian First Phase - Twenty-ninth Place
+  \item ACM-ICPC Brazilian Finals - Twenty-ninth Place (2017);
+  \item IEEEXtreme 24Hour Programming Competition - One Hundred and Fifty-Seventh Place (2017), One Hundred and Ninety-Fourth Place(2018);
+  \item State Programming Contest \textit{(Maratona Bahiana de Programação)} - First Place (2017), Gold Medal (2018), Gold Medal (2019).
+\end{itemize}
+
+\section*{Skills}
+\begin{itemize}
+  \item Programming languages: C++, Python;
+  \item Experience with tensorflow.
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
